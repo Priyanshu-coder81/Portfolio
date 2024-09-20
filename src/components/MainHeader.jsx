@@ -14,14 +14,13 @@ const MainHeader = () => {
         Frontend Web Developer || React-Redux
       </h1>
       <p className="max-w-2xl mx-auto font-Ovo">
-        I am a Frontend Devloper from Greator Noida, India. Currently Intern at
-        CodeSoft
+        I am a Frontend Devloper from Greator Noida, India. Currently Brushing up my Skills
       </p>
       <div className="flex flex-col sm:flex-row items-center gap-4 mt-4 ">
         <a
           href="#contact"
           className="px-10 py-3 border rounded-full bg-gradient-to-r from-[#b820e6] to-[#da7d20]
-          text-white flex items-center gap-2 "
+          text-white flex items-center gap-2 dark:border-transparent"
         >
           Contact Me <img src={rightArrow} alt="" />
         </a>
@@ -29,7 +28,7 @@ const MainHeader = () => {
         <a
           href={resume}
           download
-          className="px-10 py-3 border border-gray-500 rounded-full  flex items-center gap-2 bg-white "
+          className="px-10 py-3 border border-gray-500 rounded-full  flex items-center gap-2 bg-white dark:text-black"
         >
           My resume <img src={downloadIcon} alt="" className="w-4" />
         </a>

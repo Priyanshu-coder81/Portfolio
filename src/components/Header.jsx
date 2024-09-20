@@ -1,7 +1,9 @@
 import arrow from "../assets/images/arrow-icon.png";
+import arrowDark from "../assets/images/arrow-icon-dark.png";
 import moon from "../assets/images/moon_icon.png";
 import sun from "../assets/images/sun_icon.png";
 import menuBlack from "../assets/images/menu-black.png";
+import menuWhite from "../assets/images/menu-white.png";
 import backgroundImage from "../assets/images/header-bg-color.png";
 import NavList from "./NavList";
 import { useEffect, useRef } from "react";
@@ -28,25 +30,33 @@ const Header = () => {
           "bg-white",
           "bg-opacity-50",
           "backdrop-blur-lg",
-          "shadow-sm"
+          "shadow-sm",
+          "dark:bg-darkTheme",
+          "dark:shadow-white/20"
         );
         elementRef3.current.classList.remove(
           "bg-white",
           "bg-opacity-50",
-          "shadow-sm"
+          "shadow-sm",
+          "dark:border",
+          "dark:bordr-white/50",
+          "dark:bg-transparent",
         );
-
       } else {
         elementRef2.current.classList.remove(
           "bg-white",
           "bg-opacity-50",
           "backdrop-blur-lg",
-          "shadow-sm"
+          "shadow-sm",
+          "dark:bg-darkTheme"
         );
         elementRef3.current.classList.add(
           "bg-white",
           "bg-opacity-50",
-          "shadow-sm"
+          "shadow-sm",
+          "dark:border",
+          "dark:bordr-white/70",
+          "dark:bg-transparent",
         );
       }
     };
@@ -58,22 +68,24 @@ const Header = () => {
     };
   }, []);
 
-  if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-    document.documentElement.classList.add('dark')
+  if (
+    localStorage.theme === "dark" ||
+    (!("theme" in localStorage) &&
+      window.matchMedia("(prefers-color-scheme: dark)").matches)
+  ) {
+    document.documentElement.classList.add("dark");
   } else {
-    document.documentElement.classList.remove('dark')
+    document.documentElement.classList.remove("dark");
   }
 
   function toogleTheme() {
-    document.documentElement.classList.toggle('dark');
+    document.documentElement.classList.toggle("dark");
 
-    if(document.documentElement.classList.contains('dark')) {
-      localStorage.theme = 'dark';
+    if (document.documentElement.classList.contains("dark")) {
+      localStorage.theme = "dark";
+    } else {
+      localStorage.theme = "light";
     }
-    else {
-      localStorage.theme = 'light';
-    }
-
   }
 
   return (
@@ -91,7 +103,7 @@ const Header = () => {
           className="w-40 cursor-pointer lg:mr-12 mr-8"
         />
         <ul
-          className="hidden md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3 bg-white shadow-sm bg-opacity-50 font-Ovo"
+          className="hidden md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3 bg-white shadow-sm bg-opacity-50 font-Ovo dark:border dark:border-white/50 dark:bg-transparent"
           ref={elementRef3}
         >
           <NavList />
@@ -99,16 +111,23 @@ const Header = () => {
         <div className="flex items-center gap-4">
           <button onClick={toogleTheme}>
             <img src={moon} alt="" className="w-6 dark:hidden" />
-            <img src={sun} alt="" className="w-6 hidden dark:block"  />
+            <img src={sun} alt="" className="w-6 hidden dark:block" />
           </button>
           <a
             href="#contact"
-            className="hidden lg:flex items-center gap-3 px-10 py-2.5 border border-gray-500 rounded-full ml-4 font-Ovo"
+            className="hidden lg:flex items-center gap-3 px-10 py-2.5 border border-gray-500 rounded-full ml-4 font-Ovo dark:border-white/50 "
           >
-            Contact <img src={arrow} alt="Image of sun" className="w-3" />
+            Contact{" "}
+            <img src={arrow} alt="Image of sun" className="w-3 dark:hidden" />
+            <img
+              src={arrowDark}
+              alt="Image of sun"
+              className="w-3 hidden dark:block"
+            />
           </a>
           <button className="block ml-3 md:hidden" onClick={handleOnClick}>
-            <img src={menuBlack} alt="" className="w-6" />
+            <img src={menuBlack} alt="" className="w-6 dark:hidden" />
+            <img src={menuWhite} alt="" className="w-6 hidden dark:block" />
           </button>
         </div>
       </nav>
