@@ -1,5 +1,13 @@
 import nameLogo from "../assets/images/nameLogo.png";
 import mailIcon from "../assets/images/mail_icon.png";
+import { BiLogoLinkedinSquare } from "react-icons/bi";
+import { FaGithub } from "react-icons/fa6";
+import { FaInstagram } from "react-icons/fa";
+import { TbBrandLeetcode } from "react-icons/tb";
+
+
+
+
 
 const Footer = () => {
   return (
@@ -17,24 +25,28 @@ const Footer = () => {
 
           <li>
             <a href="https://www.linkedin.com/in/priyanshu-verma-a12ba829a/">
-           LinkedIn
+            <BiLogoLinkedinSquare className="size-7" />
+
 
             </a>
           </li>
 
           <li>
             <a href="https://github.com/Priyanshu-coder81">
-              Github
+            <FaGithub className="size-7" />
+
             </a>
           </li>
           <li>
             <a href="https://www.instagram.com/priyanshu_verma_4u/">
-              Instagram
+            <FaInstagram  className="size-7" />
+
             </a>
           </li>
           <li>
             <a href="https://leetcode.com/u/Priyanshu_coder114/">
-              LeetCode
+            <TbBrandLeetcode className="size-7" />
+
             </a>
           </li>
           
