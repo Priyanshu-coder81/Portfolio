@@ -18,7 +18,7 @@ const Services = () => {
           <p className="text-sm text-gray-600 leading-5">
             Web development is the process of building programming..{" "}
           </p>
-          <a href="" className="flex items-center gap-2 text-sm mt-5">
+          <a href="https://en.wikipedia.org/wiki/Web_design" target="_blank"  className="flex items-center gap-2 text-sm mt-5">
             Read more <img src={rightArrow} className="w-4" alt="" />
           </a>
         </div>
@@ -26,9 +26,10 @@ const Services = () => {
           <img src={graphicIcon} alt="" className="w-10 " />
           <h2 className="text-lg my-4 text-gray-700">Graphic design</h2>
           <p className="text-sm text-gray-600 leading-5">
-          Graphic design is the art of creating visual communications, using ....
+            Graphic design is the art of creating visual communications, using
+            ....
           </p>
-          <a href="" className="flex items-center gap-2 text-sm mt-5">
+          <a href="https://en.wikipedia.org/wiki/Graphic_design"  target="_blank" className="flex items-center gap-2 text-sm mt-5">
             Read more <img src={rightArrow} className="w-4" alt="" />
           </a>
         </div>

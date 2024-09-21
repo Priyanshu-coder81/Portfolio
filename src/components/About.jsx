@@ -8,7 +8,7 @@ import canvaIcon from "../assets/images/Canva-Emblem.png";
 
 const About = () => {
   return (
-    <div id="about" className="w-full px-[12%] py-10 scroll-mt-10">
+    <div id="about" className="w-full px-[12%] py-10 scroll-mt-20">
       <h4 className="text-center text-lg mb-2 font-Ovo">Introduction</h4>
       <h2 className="text-center text-5xl font-Ovo">About Me</h2>
 
@@ -29,7 +29,9 @@ const About = () => {
             along with my foundational knowledge in C, C++, Java, Python, HTML,
             and CSS.
           </p>
-          <ul className="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-2xl">
+          <ul className="grid 
+          grid-cols-1 sm:grid-cols-3 
+          lg:grid-cols-2 xl:grid-cols-3  gap-6 max-w-2xl">
             <li className="border-[0.5px] border-gray-500 rounded-xl p-6 cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-black ">
               <img src={codeIcon} alt="" className="w-7 mt-3" />
               <h3 className="my-4 font-semibold text-gray-700">Languages</h3>

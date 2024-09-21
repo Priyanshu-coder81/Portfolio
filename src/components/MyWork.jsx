@@ -1,6 +1,10 @@
-import workImage from "../assets/images/work-1.png";
+
 import sendIcon from "../assets/images/send-icon.png";
 import rightArrowBold from "../assets/images/right-arrow-bold.png";
+import myntra from "../assets/images/myntra-background.png"
+import netflix from "../assets/images/netflix-background.jpg"
+import rock from "../assets/images/rock.png"
+import tic from "../assets/images/tic-tac-toe.webp"
 const MyWork = () => {
   return (
     <div id="work" className="w-full px-[12%] py-10 scroll-mt-20">
@@ -14,12 +18,42 @@ const MyWork = () => {
       <div className="grid grid-cols-auto my-10 gap-5">
         <div
           className="aspect-square bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group "
-          style={{ backgroundImage: `url(${workImage})` }}
+          style={{ backgroundImage: `url(${myntra})` }}
+        >
+          <div className="bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7">
+    
+            <div className="mr-0.5">
+              <h2 className="font-semibold leading-5">Myntra Clone  </h2>
+              <p className="text-sm text-gray-700">Web Design</p>
+            </div>
+            <div className="border rounded-full border-black w-9 aspect-square flex items-center justify-center shadow-[2px_2px_0px_#000] group-hover:bg-lime-300 transition">
+            <img src={sendIcon} className="w-4" alt="" />
+            </div>
+          </div>
+        </div>
+        <div
+          className="aspect-square bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group "
+          style={{ backgroundImage: `url(${netflix})` }}
         >
           <div className="bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7">
             {" "}
             <div>
-              <h2 className="font-semibold">Frontend Project</h2>
+              <h2 className="font-semibold leading-5">Netflix Clone</h2>
+              <p className="text-sm text-gray-700">Web design</p>
+            </div>
+            <div className="border rounded-full border-black w-9 aspect-square flex items-center justify-center shadow-[2px_2px_0px_#000] group-hover:bg-lime-300 transition">
+            <img src={sendIcon} className="w-4" alt="" />
+            </div>
+          </div>
+        </div>
+        <div
+          className="aspect-square bg-no-repeat bg-cover  rounded-lg relative cursor-pointer group "
+          style={{ backgroundImage: `url(${rock})` }}
+        >
+          <div className="bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7">
+            {" "}
+            <div>
+              <h2 className="font-semibold leading-5">Rock_P_S Game</h2>
               <p className="text-sm text-gray-700">Web design</p>
             </div>
             <div className="border rounded-full border-black w-9 aspect-square flex items-center justify-center shadow-[2px_2px_0px_#000] group-hover:bg-lime-300 transition">
@@ -29,42 +63,12 @@ const MyWork = () => {
         </div>
         <div
           className="aspect-square bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group "
-          style={{ backgroundImage: `url(${workImage})` }}
+          style={{ backgroundImage: `url(${tic})` }}
         >
           <div className="bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7">
             {" "}
             <div>
-              <h2 className="font-semibold">Frontend Project</h2>
-              <p className="text-sm text-gray-700">Web design</p>
-            </div>
-            <div className="border rounded-full border-black w-9 aspect-square flex items-center justify-center shadow-[2px_2px_0px_#000] group-hover:bg-lime-300 transition">
-            <img src={sendIcon} className="w-4" alt="" />
-            </div>
-          </div>
-        </div>
-        <div
-          className="aspect-square bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group "
-          style={{ backgroundImage: `url(${workImage})` }}
-        >
-          <div className="bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7">
-            {" "}
-            <div>
-              <h2 className="font-semibold">Frontend Project</h2>
-              <p className="text-sm text-gray-700">Web design</p>
-            </div>
-            <div className="border rounded-full border-black w-9 aspect-square flex items-center justify-center shadow-[2px_2px_0px_#000] group-hover:bg-lime-300 transition">
-            <img src={sendIcon} className="w-4" alt="" />
-            </div>
-          </div>
-        </div>
-        <div
-          className="aspect-square bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group "
-          style={{ backgroundImage: `url(${workImage})` }}
-        >
-          <div className="bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7">
-            {" "}
-            <div>
-              <h2 className="font-semibold">Frontend Project</h2>
+              <h2 className="font-semibold leading-5">Frontend Project</h2>
               <p className="text-sm text-gray-700">Web design</p>
             </div>
             <div className="border rounded-full border-black w-9 aspect-square flex items-center justify-center shadow-[2px_2px_0px_#000] group-hover:bg-lime-300 transition">

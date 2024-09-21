@@ -40,7 +40,7 @@ const Header = () => {
           "shadow-sm",
           "dark:border",
           "dark:bordr-white/50",
-          "dark:bg-transparent",
+          "dark:bg-transparent"
         );
       } else {
         elementRef2.current.classList.remove(
@@ -56,7 +56,7 @@ const Header = () => {
           "shadow-sm",
           "dark:border",
           "dark:bordr-white/70",
-          "dark:bg-transparent",
+          "dark:bg-transparent"
         );
       }
     };
@@ -100,7 +100,7 @@ const Header = () => {
         <img
           src={logo}
           alt="Image of logo"
-          className="w-40 cursor-pointer lg:mr-12 mr-8"
+          className="w-40 cursor-pointer lg:mr-10 mr-8 xl:mr-12"
         />
         <ul
           className="hidden md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3 bg-white shadow-sm bg-opacity-50 font-Ovo dark:border dark:border-white/50 dark:bg-transparent"
