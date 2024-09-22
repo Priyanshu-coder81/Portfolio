@@ -1,8 +1,12 @@
 import profilePhoto from "../assets/images/profile_photo.jpg";
 import codeIcon from "../assets/images/code-icon.png";
+import codeIconDark from "../assets/images/code-icon-dark.png";
 import eduIcon from "../assets/images/edu-icon.png";
+import eduIconDark from "../assets/images/edu-icon-dark.png";
 import projectIcon from "../assets/images/project-icon.png";
+import projectIconDark from "../assets/images/project-icon-dark.png";
 import vsCodeIcon from "../assets/images/vscode.png";
+
 import gitIcon from "../assets/images/git.png";
 import canvaIcon from "../assets/images/Canva-Emblem.png";
 
@@ -32,31 +36,34 @@ const About = () => {
           <ul className="grid 
           grid-cols-1 sm:grid-cols-3 
           lg:grid-cols-2 xl:grid-cols-3  gap-6 max-w-2xl">
-            <li className="border-[0.5px] border-gray-500 rounded-xl p-6 cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-black ">
-              <img src={codeIcon} alt="" className="w-7 mt-3" />
-              <h3 className="my-4 font-semibold text-gray-700">Languages</h3>
-              <p className="text-gray-600 text-sm">
+            <li className="border-[0.5px] border-gray-500 rounded-xl p-6 cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-black dark:border-white dark:hover:shadow-white dark:hover:bg-darkHover/50 ">
+              <img src={codeIcon} alt="" className="w-7 mt-3 dark:hidden" />
+              <img src={codeIconDark} alt="" className="w-7 mt-3 hidden dark:block" />
+              <h3 className="my-4 font-semibold text-gray-700 dark:text-white">Languages</h3>
+              <p className="text-gray-600 text-sm dark:text-white/80">
                 HTML, CSS(Tailwind , Bootstrap), Javascript, React Js , Redux{" "}
               </p>
             </li>
-            <li className="border-[0.5px] border-gray-500 rounded-xl p-6 cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-black ">
-              <img src={eduIcon} alt="" className="w-7 mt-3" />
-              <h3 className="my-4 font-semibold text-gray-700">Education</h3>
-              <p className="text-gray-600 text-sm">
+            <li className="border-[0.5px] border-gray-500 rounded-xl p-6 cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-black dark:border-white dark:hover:shadow-white dark:hover:bg-darkHover/50  ">
+              <img src={eduIconDark} alt="" className="w-7 mt-3 hidden dark:block" />
+              <img src={eduIcon} alt="" className="w-7 mt-3 dark:hidden" />
+              <h3 className="my-4 font-semibold text-gray-700 dark:text-white">Education</h3>
+              <p className="text-gray-600 text-sm dark:text-white/80">
                 Computer Science Engineering with Speclization in Artifical
                 Intillegence & Machine Learning{" "}
               </p>
             </li>
-            <li className="border-[0.5px] border-gray-500 rounded-xl p-6 cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-black ">
-              <img src={projectIcon} alt="" className="w-7 mt-3" />
-              <h3 className="my-4 font-semibold text-gray-700">Projects</h3>
-              <p className="text-gray-600 text-sm">
+            <li className="border-[0.5px] border-gray-500 rounded-xl p-6 cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-black dark:border-white dark:hover:shadow-white dark:hover:bg-darkHover/50 ">
+              <img src={projectIconDark} alt="" className="w-7 mt-3 hidden dark:block" />
+              <img src={projectIcon} alt="" className="w-7 mt-3 dark:hidden" />
+              <h3 className="my-4 font-semibold text-gray-700 dark:text-white">Projects</h3>
+              <p className="text-gray-600 text-sm dark:text-white/80">
                 Built more than 5 projects
               </p>
             </li>
           </ul>
 
-          <h4 className="my-6 text-gray-700 flex justify-center font-bold font-Ovo">Tools I used</h4>
+          <h4 className="my-6 text-gray-700 flex justify-center font-bold font-Ovo dark:text-white">Tools I used</h4>
 
           <ul className="flex items-center justify-center gap-3 sm:gap-5">
             <li className="flex items-center justify-center w-10 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 duration-500">

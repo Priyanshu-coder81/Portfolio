@@ -1,13 +1,10 @@
 import nameLogo from "../assets/images/nameLogo.png";
 import mailIcon from "../assets/images/mail_icon.png";
+import mailIconDark from "../assets/images/mail_icon_dark.png";
 import { BiLogoLinkedinSquare } from "react-icons/bi";
 import { FaGithub } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa";
 import { TbBrandLeetcode } from "react-icons/tb";
-
-
-
-
 
 const Footer = () => {
   return (
@@ -15,7 +12,8 @@ const Footer = () => {
       <div className="text-center">
         <img src={nameLogo} alt="" className="w-64 mx-auto mb-3 " />
         <div className="w-max flex items-center gap-2 mx-auto">
-          <img src={mailIcon} alt="" className="w-6" />
+          <img src={mailIcon} alt="" className="w-6 dark:hidden" />
+          <img src={mailIconDark} alt="" className="w-6 hidden dark:block" />
           vpriyanshu864@gmail.com
         </div>
       </div>

@@ -1,6 +1,7 @@
 
 import sendIcon from "../assets/images/send-icon.png";
 import rightArrowBold from "../assets/images/right-arrow-bold.png";
+import rightArrowBoldDark from "../assets/images/right-arrow-bold-dark.png";
 import myntra from "../assets/images/myntra-background.png"
 import netflix from "../assets/images/netflix-background.jpg"
 import rock from "../assets/images/rock.png"
@@ -15,7 +16,7 @@ const MyWork = () => {
         projects showcasing my expertise in front-end development.
       </p>
 
-      <div className="grid grid-cols-auto my-10 gap-5">
+      <div className="grid grid-cols-auto my-10 gap-5 dark:text-black">
         <div
           className="aspect-square bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group "
           style={{ backgroundImage: `url(${myntra})` }}
@@ -77,7 +78,9 @@ const MyWork = () => {
           </div>
         </div>
       </div>
-      <a href="#" className="w-max flex items-center justify-center gap-2 text-gray-700 border-[0.5px] border-gray-700 rounded-full py-3 px-10 mx-auto my-20 hover:bg-[#fcf4ff]">Show more <img src={rightArrowBold} alt="" className="w-4" /></a>
+      <a href="#" className="w-max flex items-center justify-center gap-2 text-gray-700 border-[0.5px] border-gray-700 rounded-full py-3 px-10 mx-auto my-20 hover:bg-lightHover duration-500 dark:text-white dark:border-white dark:hover:bg-[#2a004a] ">Show more <img src={rightArrowBold} alt="" className="w-4 dark:hidden " />
+      <img src={rightArrowBoldDark} alt="" className="w-4 hidden dark:block" />
+      </a>
     </div>
   );
 };

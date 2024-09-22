@@ -12,24 +12,36 @@ const Services = () => {
       </p>
 
       <div className="grid grid-cols-auto my-10 gap-6">
-        <div className="border border-gray-400 rounded-lg px-8 py-12 hover:shadow-black cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500">
+        <div className="border border-gray-400 rounded-lg px-8 py-12 hover:shadow-black cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 dark:hover:shadow-white dark:hover:bg-darkHover">
           <img src={webIcon} alt="" className="w-10 " />
-          <h2 className="text-lg my-4 text-gray-700">Web design</h2>
-          <p className="text-sm text-gray-600 leading-5">
+          <h2 className="text-lg my-4 text-gray-700 dark:text-white">
+            Web design
+          </h2>
+          <p className="text-sm text-gray-600 leading-5 dark:text-white/80">
             Web development is the process of building programming..{" "}
           </p>
-          <a href="https://en.wikipedia.org/wiki/Web_design" target="_blank"  className="flex items-center gap-2 text-sm mt-5">
+          <a
+            href="https://en.wikipedia.org/wiki/Web_design"
+            target="_blank"
+            className="flex items-center gap-2 text-sm mt-5"
+          >
             Read more <img src={rightArrow} className="w-4" alt="" />
           </a>
         </div>
-        <div className="border border-gray-400 rounded-lg px-8 py-12 hover:shadow-black cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500">
+        <div className="border border-gray-400 rounded-lg px-8 py-12 hover:shadow-black cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 dark:hover:shadow-white dark:hover:bg-darkHover ">
           <img src={graphicIcon} alt="" className="w-10 " />
-          <h2 className="text-lg my-4 text-gray-700">Graphic design</h2>
-          <p className="text-sm text-gray-600 leading-5">
+          <h2 className="text-lg my-4 text-gray-700 dark:text-white">
+            Graphic design
+          </h2>
+          <p className="text-sm text-gray-600 leading-5 dark:text-white/80">
             Graphic design is the art of creating visual communications, using
             ....
           </p>
-          <a href="https://en.wikipedia.org/wiki/Graphic_design"  target="_blank" className="flex items-center gap-2 text-sm mt-5">
+          <a
+            href="https://en.wikipedia.org/wiki/Graphic_design"
+            target="_blank"
+            className="flex items-center gap-2 text-sm mt-5"
+          >
             Read more <img src={rightArrow} className="w-4" alt="" />
           </a>
         </div>
