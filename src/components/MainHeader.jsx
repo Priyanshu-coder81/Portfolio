@@ -1,7 +1,7 @@
 import handIcon from "../assets/images/hand-icon.png";
 import rightArrow from "../assets/images/right-arrow-white.png";
 import downloadIcon from "../assets/images/download-icon.png";
-import resume from "../assets/MY_RESUME.pdf";
+import resume from "../assets/My_resume(U).pdf";
 import profilePhoto from "../assets/images/profile_photo.jpg";
 const MainHeader = () => {
   return (
