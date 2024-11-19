@@ -14,7 +14,8 @@ const MainHeader = () => {
         Frontend Web Developer || React-Redux
       </h1>
       <p className="max-w-2xl mx-auto font-Ovo">
-        I am a Frontend Devloper from Greator Noida, India. Currently Brushing up my Skills
+        I am a Frontend Devloper from Greator Noida, India. Currently Brushing
+        up my Skills
       </p>
       <div className="flex flex-col sm:flex-row items-center gap-4 mt-4 ">
         <a
