@@ -26,41 +26,47 @@ const About = () => {
         </div>
         <div className="flex-1">
           <p className="mb-10 max-w-2xl font-Ovo">
-            I'm Priyanshu Verma, currently a second-year Computer Science
-            Engineering student at Sharda University in Greater Noida, set to
-            graduate in 2027. As I continue my coding adventure, I’ve expanded
-            my skills to include JavaScript, React.js, Redux, and Bootstrap,
-            along with my foundational knowledge in C, C++, Java, Python, HTML,
-            and CSS.
+          I'm Priyanshu Verma, a third-year Computer Science Engineering student at Sharda University (2027). I'm a MERN Stack Developer with a strong grasp of Machine Learning fundamentals and a passion for building real-world full-stack apps. I've solved 400+ DSA problems on LeetCode and worked with technologies like React.js, Node.js, MongoDB, Redux, Tailwind CSS, and more. Always learning, always building.
+
+
           </p>
           <ul className="grid 
           grid-cols-1 sm:grid-cols-3 
           lg:grid-cols-2 xl:grid-cols-3  gap-6 max-w-2xl">
-            <li className="border-[0.5px] border-gray-500 rounded-xl p-6 cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-black dark:border-white dark:hover:shadow-white dark:hover:bg-darkHover/50 ">
-              <img src={codeIcon} alt="" className="w-7 mt-3 dark:hidden" />
-              <img src={codeIconDark} alt="" className="w-7 mt-3 hidden dark:block" />
-              <h3 className="my-4 font-semibold text-gray-700 dark:text-white">Languages</h3>
-              <p className="text-gray-600 text-sm dark:text-white/80">
-                HTML, CSS(Tailwind , Bootstrap), Javascript, React Js , Redux{" "}
-              </p>
-            </li>
-            <li className="border-[0.5px] border-gray-500 rounded-xl p-6 cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-black dark:border-white dark:hover:shadow-white dark:hover:bg-darkHover/50  ">
-              <img src={eduIconDark} alt="" className="w-7 mt-3 hidden dark:block" />
-              <img src={eduIcon} alt="" className="w-7 mt-3 dark:hidden" />
-              <h3 className="my-4 font-semibold text-gray-700 dark:text-white">Education</h3>
-              <p className="text-gray-600 text-sm dark:text-white/80">
-                Computer Science Engineering with Speclization in Artifical
-                Intillegence & Machine Learning{" "}
-              </p>
-            </li>
-            <li className="border-[0.5px] border-gray-500 rounded-xl p-6 cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-black dark:border-white dark:hover:shadow-white dark:hover:bg-darkHover/50 ">
-              <img src={projectIconDark} alt="" className="w-7 mt-3 hidden dark:block" />
-              <img src={projectIcon} alt="" className="w-7 mt-3 dark:hidden" />
-              <h3 className="my-4 font-semibold text-gray-700 dark:text-white">Projects</h3>
-              <p className="text-gray-600 text-sm dark:text-white/80">
-                Built more than 5 projects
-              </p>
-            </li>
+      <li className="border-[0.5px] border-gray-500 rounded-xl p-6 cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-black dark:border-white dark:hover:shadow-white dark:hover:bg-darkHover/50 ">
+  <img src={codeIcon} alt="" className="w-7 mt-3 dark:hidden" />
+  <img src={codeIconDark} alt="" className="w-7 mt-3 hidden dark:block" />
+  <h3 className="my-4 font-semibold text-gray-700 dark:text-white">Tech Stack</h3>
+  <p className="text-gray-600 text-sm dark:text-white/80">
+    HTML, CSS (Tailwind, Bootstrap), JavaScript, React.js, Redux, Node.js, Express.js, MongoDB
+  </p>
+</li>
+
+<li className="border-[0.5px] border-gray-500 rounded-xl p-6 cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-black dark:border-white dark:hover:shadow-white dark:hover:bg-darkHover/50  ">
+  <img src={eduIconDark} alt="" className="w-7 mt-3 hidden dark:block" />
+  <img src={eduIcon} alt="" className="w-7 mt-3 dark:hidden" />
+  <h3 className="my-4 font-semibold text-gray-700 dark:text-white">Education</h3>
+  <p className="text-gray-600 text-sm dark:text-white/80">
+    Computer Science Engineering with Specialization in Artificial Intelligence & Machine Learning
+  </p>
+</li>
+
+<li className="border-[0.5px] border-gray-500 rounded-xl p-6 cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-black dark:border-white dark:hover:shadow-white dark:hover:bg-darkHover/50 ">
+  <img src={projectIconDark} alt="" className="w-7 mt-3 hidden dark:block" />
+  <img src={projectIcon} alt="" className="w-7 mt-3 dark:hidden" />
+  <h3 className="my-4 font-semibold text-gray-700 dark:text-white">Problem Solving</h3>
+  <p className="text-gray-600 text-sm dark:text-white/80">
+    Solved 350+ DSA problems on <a
+      href="https://leetcode.com/u/Priyanshu_coder114/"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="text-blue-500 hover:underline"
+    >
+      LeetCode
+    </a>. Focused on data structures, algorithms, and coding efficiency.
+  </p>
+</li>
+
           </ul>
 
           <h4 className="my-6 text-gray-700 flex justify-center font-bold font-Ovo dark:text-white">Tools I used</h4>
@@ -75,6 +81,16 @@ const About = () => {
             <li className="flex items-center justify-center w-10 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 duration-500">
               <img src={canvaIcon} className="w-8 sm:w-14" alt="" />
             </li>
+            <li className="flex items-center justify-center w-10 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 duration-500">
+              <img src={"/figma.svg"} className="w-5 sm:w-10" alt="" />
+            </li>
+            <li className="flex items-center justify-center w-10 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 duration-500">
+              <img src={"/latex.svg"} className="w-5 sm:w-10 invert" alt="" />
+            </li>
+            <li className="flex items-center justify-center w-10 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 duration-500">
+              <img src={"/mongodb.svg"} className="w-5 sm:w-10" alt="" />
+            </li>
+           
           </ul>
         </div>
       </div>

@@ -11,10 +11,10 @@ const MainHeader = () => {
         Hi! I'm Priyanshu Vema <img src={handIcon} alt="" />
       </h3>
       <h1 className="text-3xl sm:text-6xl lg-[66px] font-Ovo">
-        Frontend Web Developer || React-Redux
+        MERN Stack Developer
       </h1>
       <p className="max-w-2xl mx-auto font-Ovo">
-        I am a Frontend Devloper from Greator Noida, India. Currently Brushing
+        I am a Full-Stack Devloper from Greator Noida, India. Currently Brushing
         up my Skills
       </p>
       <div className="flex flex-col sm:flex-row items-center gap-4 mt-4 ">
