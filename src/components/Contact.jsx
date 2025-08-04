@@ -6,7 +6,6 @@ const Contact = () => {
   const textRef = useRef(null);
   const inputRef = useRef(null);
   const emailRef = useRef(null);
-  const emailKey = import.meta.env.VITE_EMAIL_KEY;
 
   const handleOnSubmit = async (e) => {
     e.preventDefault(); 
@@ -15,11 +14,10 @@ const Contact = () => {
       name: inputRef.current.value,
       email: emailRef.current.value,
       message: textRef.current.value,
-      access_key: emailKey,
     };
 
     // Submit form data to Web3Forms API
-    const response = await fetch('https://api.web3forms.com/submit', {
+    const response = await fetch('https://formspree.io/f/xwpqrpkz', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -53,7 +51,6 @@ const Contact = () => {
         <input
           type="hidden"
           name="access_key"
-          value={emailKey}
         />
 
         <div className="grid grid-auto gap-6 mt-10 mb-8">
