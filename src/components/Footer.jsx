@@ -2,9 +2,11 @@ import nameLogo from "../assets/images/nameLogo.png";
 import mailIcon from "../assets/images/mail_icon.png";
 import mailIconDark from "../assets/images/mail_icon_dark.png";
 import { BiLogoLinkedinSquare } from "react-icons/bi";
-import { FaGithub } from "react-icons/fa6";
-import { FaInstagram } from "react-icons/fa";
+import { FaGithub, } from "react-icons/fa6";
+
 import { TbBrandLeetcode } from "react-icons/tb";
+import { BsTwitterX } from "react-icons/bs";
+
 
 const Footer = () => {
   return (
@@ -36,8 +38,9 @@ const Footer = () => {
             </a>
           </li>
           <li>
-            <a href="https://www.instagram.com/priyanshu_verma_4u/">
-            <FaInstagram  className="size-7" />
+            <a href="https://x.com/PriyanshuV82847">
+            <BsTwitterX className="size-6" />
+
 
             </a>
           </li>
