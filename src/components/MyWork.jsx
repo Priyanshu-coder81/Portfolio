@@ -17,7 +17,7 @@ const MyWork = () => {
       </p>
 
       <div className="grid grid-cols-auto my-10 gap-5 dark:text-black">
-        <a href="https://github.com/Priyanshu-coder81/Chess-Game" target="_blank">
+        <a href="https://chess-game-gamma-umber.vercel.app/" target="_blank">
         <div
           className="aspect-square bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group "
           style={{ backgroundImage: `url(${chess})` }}

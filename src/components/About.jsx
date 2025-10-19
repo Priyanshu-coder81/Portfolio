@@ -38,7 +38,7 @@ const About = () => {
   <img src={codeIconDark} alt="" className="w-7 mt-3 hidden dark:block" />
   <h3 className="my-4 font-semibold text-gray-700 dark:text-white">Tech Stack</h3>
   <p className="text-gray-600 text-sm dark:text-white/80">
-  JavaScript (ES6+) • React.js • Redux • Node.js • Express.js • MongoDB
+  JavaScript (ES6+) • TypeScript • React.js • Redux • Node.js • Express.js • MongoDB
   </p>
 </li>
 
@@ -56,7 +56,7 @@ const About = () => {
   <img src={projectIcon} alt="" className="w-7 mt-3 dark:hidden" />
   <h3 className="my-4 font-semibold text-gray-700 dark:text-white">Problem Solving</h3>
   <p className="text-gray-600 text-sm dark:text-white/80">
-    Solved 380+ DSA problems on <a
+    Solved 500+ DSA problems on <a
       href="https://leetcode.com/u/Priyanshu_coder114/"
       target="_blank"
       rel="noopener noreferrer"
